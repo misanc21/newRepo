@@ -9,7 +9,7 @@ interface MenuHeaderMobileProps {
 export const MenuHeaderMobile = ({ setMenuOpen, menuOpen }: MenuHeaderMobileProps) => {
   return (
     <div
-      className={`fixed inset-0 bg-black text-white flex flex-col items-center justify-center transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40`}
+      className={`fixed inset-0 bg-neutral-900 text-white flex flex-col items-center justify-center transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40`}
     >
       <Link
         href={'/'}

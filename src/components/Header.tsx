@@ -3,7 +3,6 @@ import ContactButton from './ContactButton';
 import AnimatedLink from './AnimatedLink';
 import Image from 'next/image';
 import { useState } from 'react';
-import Link from 'next/link';
 import { MenuHeaderMobile } from './header/MenuHeaderMobile';
 
 export const Header = () => {
