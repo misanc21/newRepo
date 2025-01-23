@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
+import Fondo from "@/components/motion/fondo";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const interFont = Inter({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-inter',
 });
 
 export const metadata: Metadata = {
@@ -26,10 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${interFont.className} antialiased`}
       >
         <Header />
-        {children}
+        <div className="relative h-screen flex items-center justify-center overflow-hidden">
+          <Fondo />
+          {children}
+        </div>
       </body>
     </html>
   );

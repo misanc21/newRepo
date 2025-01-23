@@ -37,7 +37,7 @@ function StyleSheet() {
     <style>{`
             
         .container {
-            perspective: 900px;
+            perspective: 600px;
             width: 700px;
             height: 700px;
         }
@@ -59,27 +59,27 @@ function StyleSheet() {
 
         .front {
             transform: rotateY(0deg) translateZ(100px);
-            background-color: #f0f0f02c;
+            background-color: #d4d4d42c;
         }
         .right {
             transform: rotateY(90deg) translateZ(100px);
-            background-color: #dbdbdb2c;
+            background-color: #d1d1d12c;
         }
         .back {
             transform: rotateY(180deg) translateZ(100px);
-            background-color: #e1e1e12c;
+            background-color: #c7c7c72c;
         }
         .left {
             transform: rotateY(-90deg) translateZ(100px);
-            background-color: #d9d9d92c;
+            background-color: #c4c4c42c;
         }
         .top {
             transform: rotateX(90deg) translateZ(100px);
-            background-color: #d8d8d82c;
+            background-color: #c9c9c91c;
         }
         .bottom {
             transform: rotateX(-90deg) translateZ(100px);
-            background-color: rgba(226, 226, 226, 0.173);
+            background-color: #cfcfcf1c;
         }
 
     `}</style>
