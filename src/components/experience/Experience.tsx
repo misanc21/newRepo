@@ -9,14 +9,14 @@ export const Experience = () => {
     target: headerRef,
     offset: ["start end", "end start"],
   })
-  const headerOpacity = useTransform(headerScrollYProgress, [0, 0.4, 0.8], [0, 1, 0]);
+  const headerOpacity = useTransform(headerScrollYProgress, [0, 0.5, 0.8], [0, 1, 0]);
   const headerTranslateY = useTransform(headerScrollYProgress, [0, 1], ["30", "-50"]);
 
   return (
     <div className="flex flex-col justify-center items-center">
       <motion.h2
         ref={headerRef}
-        className="text-9xl font-bold my-20"
+        className="text-6xl md:text-9xl font-bold mb-52 sm:my-20 mx-20 sm:mx-0"
         style={{
           opacity: headerOpacity,
           y: headerTranslateY,

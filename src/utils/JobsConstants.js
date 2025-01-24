@@ -48,7 +48,7 @@ export const JOBS_CONSTANTS = [
   {
     id: 1,
     position: "Frontend Developer",
-    company: "Infosys (Mexican Airline Company)",
+    company: "Infosys Technologies",
     time: "Jul/23 - Ago/2024",
     details: "I colaborate in the booking flights web application for one of the biggest airline companies in Mexico for many countries and languages. Connecting rest API made with java springboot",
     methodology: "SCRUM",
@@ -84,11 +84,155 @@ export const JOBS_CONSTANTS = [
         alt: "react bootstrap",
       },
       {
-      idTool: 6,
+      idTool: 5,
       url: "github.png",
       name: "Github",
       alt: "Github",
     },
+    ]
+  },
+  {
+    id: 2,
+    position: "Web Developer",
+    company: "Infosys Technologies",
+    time: "Oct/20 - Jul/23",
+    details: "I worked in a new platform for a worldwide banking company. Connecting rest API made with java springboot",
+    methodology: "SCRUM",
+    tools: [
+      {
+        idTool: 0,
+        url: "angular.png",
+        name: "Angular",
+        alt: "angular",
+      },
+      {
+        idTool: 1,
+        url: "typescript.png",
+        name: "Typescript",
+        alt: "typescript",
+      },
+      {
+        idTool: 2,
+        url: "sass.png",
+        name: "Sass",
+        alt: "sass",
+      },
+      {
+        idTool: 3,
+        url: "aem.png",
+        name: "Adobe Experience Manager",
+        alt: "aem",
+      },
+      {
+        idTool: 4,
+        url: "karma.png",
+        name: "Karma",
+        alt: "karma",
+      },
+      {
+        idTool: 6,
+        url: "github.png",
+        name: "Github",
+        alt: "Github",
+      },
+      {
+        idTool: 7,
+        url: "jenkins.png",
+        name: "Jenkins",
+        alt: "Jenkins",
+        },
+    ]
+  },
+  {
+    id: 3,
+    position: "Fullstack Developer",
+    company: "Trisc",
+    time: "Oct/19 - Oct/20",
+    details: "I build web apps like ERP, production lines, inventories, working as a fullstack dev",
+    methodology: "SCRUM",
+    tools: [
+      {
+        idTool: 0,
+        url: "angular.png",
+        name: "Angular",
+        alt: "angular",
+      },
+      {
+        idTool: 1,
+        url: "react.png",
+        name: "React",
+        alt: "react",
+      },
+      {
+        idTool: 2,
+        url: "mysql.png",
+        name: "MySQL",
+        alt: "mysql",
+      },
+      {
+        idTool: 3,
+        url: "php.png",
+        name: "php",
+        alt: "php",
+      },
+      {
+        idTool: 4,
+        url: "mongodb.png",
+        name: "Mongo DB",
+        alt: "mongo",
+      },
+      {
+        idTool: 6,
+        url: "github.png",
+        name: "Github",
+        alt: "Github",
+      },
+    ]
+  },
+  {
+    id: 4,
+    position: "Web Developer",
+    company: "DDS.media",
+    time: "Nov/18 - Oct/19",
+    details: "I colaborarte in projects like ERP, delivery, and support ticke, working as a fullstack dev",
+    methodology: "SCRUM",
+    tools: [
+      {
+        idTool: 0,
+        url: "javascript.png",
+        name: "Javascript",
+        alt: "javascript",
+      },
+      {
+        idTool: 1,
+        url: "jquery.png",
+        name: "JQuery",
+        alt: "jquery",
+      },
+      {
+        idTool: 2,
+        url: "mysql.png",
+        name: "MySQL",
+        alt: "mysql",
+      },
+      {
+        idTool: 3,
+        url: "php.png",
+        name: "php",
+        alt: "php",
+      },
+      {
+        idTool: 4,
+        url: "react.png",
+        name: "react",
+        alt: "react",
+      },
+      {
+        idTool: 5,
+        url: "github.png",
+        name: "Github",
+        alt: "Github",
+      },
     ]
   }
 ]
