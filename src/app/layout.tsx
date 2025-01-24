@@ -12,8 +12,11 @@ const interFont = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "M21",
+  title: "Misanc21",
   description: "portfolio",
+  icons: {
+    icon: "/public/logomisanc21.png"
+  }
 };
 
 export default function RootLayout({
@@ -26,11 +29,13 @@ export default function RootLayout({
       <body
         className={`${interFont.className} antialiased`}
       >
-        <Header />
-        <div className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="fixed inset-0 -z-10 pointer-events-none">
           <Fondo />
-          {children}
         </div>
+        <Header />
+        <main className="relative z-30">
+          {children}
+        </main>
       </body>
     </html>
   );
