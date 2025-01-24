@@ -5,17 +5,20 @@ import { useRef } from "react"
 import { JOBS_CONSTANTS } from '../../utils/JobsConstants';
 
 export const Job = () => {
+  // eslint-disable-next-line
   const refs = JOBS_CONSTANTS.map(() => useRef(null));
   return (
     <div className="w-full">
       {JOBS_CONSTANTS.map((job, index) => {
         const ref = refs[index];
+        // eslint-disable-next-line
         const { scrollYProgress } = useScroll({
           target: ref,
           offset: ["start end", "end start"],
         })
-
+        // eslint-disable-next-line
         const opacity = useTransform(scrollYProgress, [0, 0.4, 0.8], [0, 1, 0]);
+        // eslint-disable-next-line
         const translateY = useTransform(scrollYProgress, [0, 1], ["30", "-50"]);
 
         return (
