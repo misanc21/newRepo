@@ -28,8 +28,15 @@ export const SideProjects = () => {
         {
           TOOLS_SIDE.map(item =>
           (
-            <div key={item.idTool} className='w-14 md:w-24'>
-              <Image layout="responsive" src={`/tools/${item.url}`} alt={item.url} width={10} height={10} />
+            <div key={item.idTool} className='w-14 md:w-20'>
+              <Image
+                src={`/tools/${item.url}`}
+                alt={item.url}
+                width={10}
+                height={10}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                style={{ width: '100%', height: 'auto' }}
+              />
             </div>
           )
           )
