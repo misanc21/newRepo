@@ -32,6 +32,7 @@ export default function Rotate({
 }: RotateProps) {
   return (
     <motion.span
+      initial={{ scale: 0 }}
       animate={{
         scale: scaleArray,
         rotate: rotateArray,

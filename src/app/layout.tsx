@@ -3,7 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import Fondo from "@/components/motion/fondo";
-
+import { Modal } from "@/components/header/Modal";
+import { Provider } from "./context/Context";
 
 const interFont = Inter({
   subsets: ['latin'],
@@ -32,10 +33,13 @@ export default function RootLayout({
         <div className="fixed inset-0 -z-10 pointer-events-none">
           <Fondo />
         </div>
-        <Header />
-        <main className="relative z-30">
-          {children}
-        </main>
+        <Provider>
+          <Header />
+          <main className="relative z-30">
+            {children}
+          </main>
+          <Modal />
+        </Provider>
       </body>
     </html>
   );
