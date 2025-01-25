@@ -32,12 +32,12 @@ export default function Home() {
           timesArray={[0, 0.2, 0.5, 0.8, 1]}
           flex={true}
         />
-        <h1 className={`text-5xl font-bold mt-2 ${audioWide.className}`} >Misanc21</h1>
-        <p className={`text-[25px] font-light text-gray-500 ${interFont.className}`}>
+        <h1 className={`text-6xl font-bold mt-2 ${audioWide.className}`} >Misanc21</h1>
+        <p className={`text-[31px] font-light text-gray-500 ${interFont.className}`}>
           Fullstack Developer
         </p>
         <div className={`mt-24 w-full flex justify-center flex-col px-10 items-center ${interFont.className}`}>
-          <p className={`text-base sm:text-xl w-4/5 font-bold text-center`}>
+          <p className={`text-base sm:text-2xl w-4/5 font-bold text-center`}>
             <RevealText text={welcomeText} />
           </p>
 

@@ -194,7 +194,7 @@ export const JOBS_CONSTANTS = [
     position: "Web Developer",
     company: "DDS.media",
     time: "Nov/18 - Oct/19",
-    details: "I colaborarte in projects like ERP, delivery, and support ticke, working as a fullstack dev",
+    details: "I colaborated in projects like ERP, delivery, and support ticke, working as a fullstack dev",
     methodology: "SCRUM",
     tools: [
       {

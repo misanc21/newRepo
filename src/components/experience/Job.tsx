@@ -17,12 +17,12 @@ export const Job = () => {
           offset: ["start end", "end start"],
         })
         // eslint-disable-next-line
-        const opacity = useTransform(scrollYProgress, [0, 0.4, 0.77], [0, 1, 0]);
+        const opacity = useTransform(scrollYProgress, [0, 0.42, 0.77], [0, 1, 0]);
         // eslint-disable-next-line
         const translateY = useTransform(scrollYProgress, [0, 1], ["30", "-50"]);
 
         return (
-          <div ref={ref} className="w-full min-h-[30rem] p-10 flex flex-col sm:flex-row justify-center items-center" key={index}>
+          <div ref={ref} className="w-full min-h-[40rem] sm:min-h-[35rem] p-10 flex flex-col sm:flex-row justify-center items-center" key={index}>
             <motion.div
               className="flex flex-col justify-center items-start w-full sm:w-1/2"
               style={{
