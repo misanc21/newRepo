@@ -3,8 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import Fondo from "@/components/motion/fondo";
-import { Modal } from "@/components/header/Modal";
+import { Modal } from "@/components/Modal";
 import { Provider } from "./context/Context";
+import { Contact } from "@/components/header/Contact";
 
 const interFont = Inter({
   subsets: ['latin'],
@@ -38,7 +39,9 @@ export default function RootLayout({
           <main className="relative z-30">
             {children}
           </main>
-          <Modal />
+          <Modal>
+            <Contact />
+          </Modal>
         </Provider>
       </body>
     </html>
