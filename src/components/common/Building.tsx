@@ -14,7 +14,7 @@ export const Building = () => {
           style={{ width: '100%', height: 'auto' }}
         />
       </div>
-      <span className="text-3xl md:text-5xl">
+      <span className="text-2xl md:text-5xl">
         {`<This page is in building />`}
       </span>
       <Link className="text-2xl text-gray-500 mt-5" href={"/"}>
