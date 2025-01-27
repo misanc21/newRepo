@@ -6,6 +6,7 @@ import Fondo from "@/components/motion/fondo";
 import { Modal } from "@/components/Modal";
 import { Provider } from "./context/Context";
 import { Contact } from "@/components/header/Contact";
+import Head from 'next/head';
 
 const interFont = Inter({
   subsets: ['latin'],
@@ -28,6 +29,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta property="og:title" content="Mi Portafolio" />
+        <meta property="og:description" content="Explore my experience and Projects." />
+        <meta property="og:image" content="https://misanc21.vercel.app/logomisanc21.png" />
+        <meta property="og:url" content="https://misanc21.vercel.app/" />
+        <meta property="og:type" content="website" />
+      </Head>
       <body
         className={`${interFont.className} antialiased`}
       >
