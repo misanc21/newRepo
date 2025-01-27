@@ -1,5 +1,7 @@
+import { Building } from "@/components/common/Building";
+
 export default function MyProjectsPage() {
   return (
-    <h1>ProjectsPage</h1>
+    <Building />
   )
 }

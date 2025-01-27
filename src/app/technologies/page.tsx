@@ -1,5 +1,7 @@
+import { Building } from "@/components/common/Building";
+
 export default function ExperiencePage() {
   return (
-    <h1>TechnologiesPage</h1>
+    <Building />
   )
 }

@@ -1,7 +1,8 @@
+import { Building } from "@/components/common/Building";
 
 
 export default function ExperiencePage() {
   return (
-    <h1>ExperiencePage</h1>
+    <Building />
   )
 }
