@@ -6,7 +6,6 @@ import Fondo from "@/components/motion/fondo";
 import { Modal } from "@/components/Modal";
 import { Provider } from "./context/Context";
 import { Contact } from "@/components/header/Contact";
-import Head from 'next/head';
 
 const interFont = Inter({
   subsets: ['latin'],
@@ -16,7 +15,21 @@ const interFont = Inter({
 
 export const metadata: Metadata = {
   title: "Misanc21",
-  description: "portfolio",
+  description: "Explore my experience",
+  openGraph: {
+    title: "Misanc21",
+    description: "Explore my experience",
+    url: "https://misanc21.vercel.app/",
+    type: "website",
+    images: [
+      {
+        url: "https://misanc21.vercel.app/logomisanc21.png",
+        width: 1200,
+        height: 630,
+        alt: "My Portfolio",
+      },
+    ]
+  },
   icons: {
     icon: "/public/logomisanc21.png"
   }
@@ -29,13 +42,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta property="og:title" content="Mi Portafolio" />
-        <meta property="og:description" content="Explore my experience and Projects." />
-        <meta property="og:image" content="https://misanc21.vercel.app/logomisanc21.png" />
-        <meta property="og:url" content="https://misanc21.vercel.app/" />
-        <meta property="og:type" content="website" />
-      </Head>
       <body
         className={`${interFont.className} antialiased`}
       >
